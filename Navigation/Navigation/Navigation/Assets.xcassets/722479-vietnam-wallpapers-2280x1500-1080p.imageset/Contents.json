@@ -1,0 +1,21 @@
+{
+  "images" : [
+    {
+      "filename" : "722479-vietnam-wallpapers-2280x1500-1080p.jpg",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
