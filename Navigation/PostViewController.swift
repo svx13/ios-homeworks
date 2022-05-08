@@ -11,28 +11,25 @@ struct Post{
     var title: String
 }
 class PostViewController: UIViewController {
-
-        var post: Post?
-       
-        override func viewDidLoad() {
-            super.viewDidLoad()
-            if let post = post {
-                title = post.title
-            }
-
-            view.backgroundColor = .cyan
-            makeBarItem()
+    
+    var post: Post?
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        if let post = post {
+            title = post.title
         }
-        private func makeBarItem(){
-            let barItem = UIBarButtonItem(title: "Следующий шаг", style: .plain, target:self, action: #selector(tapAction))
-            navigationItem.rightBarButtonItem = barItem
-        }
-        @objc private func tapAction(){
-            let infoViewController = InfoViewController()
-            infoViewController.title = "Новый лист"
-            present(infoViewController, animated: true)
-        
-        }
-
+        view.backgroundColor = .cyan
+        makeBarItem()
+    }
+    private func makeBarItem(){
+        let barItem = UIBarButtonItem(title: "Следующий шаг", style: .plain, target:self, action: #selector(tapAction))
+        navigationItem.rightBarButtonItem = barItem
+    }
+    @objc private func tapAction(){
+        let infoViewController = InfoViewController()
+        infoViewController.title = "Новый лист"
+        present(infoViewController, animated: true)
+    }
 }
 
